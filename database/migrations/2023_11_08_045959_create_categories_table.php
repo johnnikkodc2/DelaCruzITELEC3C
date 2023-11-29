@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->integer('user_id');
             $table->timestamps();
             $table->softDeletes();
+            $table->json('category_image')->nullable();
         });
     }
 
